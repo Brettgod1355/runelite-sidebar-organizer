@@ -65,7 +65,8 @@ Keyboard tab traversal follows the client's logical ordering and requires furthe
 live-client evaluation. Persistent identity is a best-effort fallback until
 RuneLite provides a stable identifier; renames do not retain the previous slot.
 
-Headless tests cover the current dependency at 1.12.38. Live-client behavior,
-profile switching, platform differences, and Plugin Hub acceptability remain
-unverified. Public/protected Swing access does not make the client UI structure
+Headless tests cover RuneLite 1.12.38. The repository owner reported successful
+basic Windows live-client checks on September 10, 2026; see [testing status](TESTING.md).
+Profile switching, additional platform/input cases, and Plugin Hub acceptability
+remain unverified. Public/protected Swing access does not make the client UI structure
 a guaranteed RuneLite plugin API.
