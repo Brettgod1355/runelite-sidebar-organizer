@@ -27,7 +27,7 @@ cancels the move. No account, server, or data upload is needed by this plugin.
 
 ## Run in IntelliJ (Windows, macOS, Linux)
 
-1. Clone this repository and check out `feat/sidebar-ordering` while the initial PR is open.
+1. Clone this repository and use the `main` branch.
 2. Open the repository as a Gradle project in IntelliJ IDEA.
 3. Set the project and Gradle JVM to a **JDK 11 or 17**, not a JRE.
 4. Let Gradle finish importing, then run the Gradle **run** task.
@@ -62,7 +62,11 @@ and actual `ClientUI.addNavigation` / `removeNavigation` lifecycle methods in a
 headless fixture.
 They do not constitute a complete live-client or Plugin Hub approval test.
 
-See [the manual test checklist](docs/TESTING.md) before relying on a build.
+The repository owner reported successful Windows live-client checks on September 10,
+2026: dragging, correct panel selection, Up / Down, saved order after restart,
+plugin disable/re-enable, drag locking, one/two-column resizing, and reset persistence.
+See [testing status and remaining checks](docs/TESTING.md) for the tested environment,
+automated results, and the limits of that verification.
 
 ## License
 
